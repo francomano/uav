@@ -26,3 +26,6 @@ uav_1_x=X['UAV_1_x']
 normalized_df=(X-X.min())/(X.max()-X.min())  #between 0 and 1 (is column-wise)
 
  ws=sklearn.utils.class_weight.compute_class_weight(class_weight='balanced', classes=np.array([0,1,2,3,4]), y=y)
+
+
+ #grid-search for hyperparameters of kernel: to much time
